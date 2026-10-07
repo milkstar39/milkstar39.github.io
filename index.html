@@ -1,90 +1,1010 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  <title>Miku Kobayashi | Business Improvement Portfolio</title>
+
+  <meta
+    name="description"
+    content="Excel・VBA・VBS・GAS・Webを活用した業務改善・自動化を行っています。日々の面倒な作業を整理し、仕組みでラクにします。"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+
+  <!-- =========================
+       Header
+  ========================== -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="#" class="logo">
+        Miku Kobayashi
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+
+
+  <main>
+
+    <!-- =========================
+         Hero
+    ========================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+
+          <p class="hero-label">
+            BUSINESS IMPROVEMENT / AUTOMATION
+          </p>
+
+          <h1>
+            面倒な業務を、<br>
+            <span>ちょっとラクに。</span>
+          </h1>
+
+          <p class="hero-text">
+            Excel・VBA・VBS・GAS・Webを使って、<br class="pc-only">
+            日々の「これ毎回やるの面倒だな」を仕組みで改善します。
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#works" class="button button-primary">
+              改善実績を見る
+            </a>
+
+            <a href="#services" class="button button-secondary">
+              できること
+            </a>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="visual-window">
+
+            <div class="window-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="window-content">
+
+              <div class="automation-row">
+                <div class="automation-before">
+                  手作業
+                </div>
+
+                <div class="automation-arrow">
+                  →
+                </div>
+
+                <div class="automation-after">
+                  自動化
+                </div>
+              </div>
+
+              <div class="visual-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="visual-result">
+                <span>TIME SAVED</span>
+                <strong>60 min</strong>
+              </div>
+
+            </div>
+
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
+
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    </section>
+
+
+    <!-- =========================
+         Results
+    ========================== -->
+    <section class="results">
+      <div class="container">
+
+        <div class="result-grid">
+
+          <div class="result-item">
+            <strong>60<span>min</span></strong>
+            <p>1回あたり最大<br>約60分削減</p>
+          </div>
+
+          <div class="result-item">
+            <strong>30<span>min</span></strong>
+            <p>顧客履歴確認を<br>約30分短縮</p>
+          </div>
+
+          <div class="result-item">
+            <strong>1<span>click</span></strong>
+            <p>毎月の勤怠表作成を<br>ワンクリック化</p>
+          </div>
+
+          <div class="result-item">
+            <strong>12<span>pages</span></strong>
+            <p>業務マニュアルを<br>Webサイト化</p>
+          </div>
+
+        </div>
+
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    </section>
+
+
+    <!-- =========================
+         About
+    ========================== -->
+    <section class="section about" id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">ABOUT</p>
+
+          <h2>
+            ツールを作ることより、<br>
+            <span>仕事をラクにすること。</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-main">
+
+            <p>
+              「毎回同じことを入力している」
+            </p>
+
+            <p>
+              「必要な情報を探すだけで時間がかかる」
+            </p>
+
+            <p>
+              「これ、ボタンひとつで終わらないかな？」
+            </p>
+
+          </div>
+
+          <div class="about-text">
+
+            <p>
+              そんな日々の小さな面倒を見つけて、
+              業務の流れを整理し、改善方法を考えることが得意です。
+            </p>
+
+            <p>
+              VBAありき、GASありきではなく、
+              現在の作業内容を確認したうえで、
+              Excel・VBA・VBS・GAS・Webなどから
+              適した方法を考えます。
+            </p>
+
+            <p>
+              「何を自動化したらいいかわからない」
+              という段階からでも、一緒に整理できます。
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Works
+    ========================== -->
+    <section class="section works" id="works">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">WORKS</p>
+
+          <h2>
+            業務改善実績
+          </h2>
+
+          <p class="section-description">
+            実務の中で感じた「面倒」を、仕組みで改善してきました。
+          </p>
+        </div>
+
+
+        <div class="works-list">
+
+          <!-- Work 01 -->
+          <article class="work-card">
+
+            <div class="work-number">
+              01
+            </div>
+
+            <div class="work-content">
+
+              <div class="work-tags">
+                <span>Excel</span>
+                <span>VBA</span>
+                <span>業務整理</span>
+              </div>
+
+              <h3>
+                顧客対応履歴を<br>
+                時系列で一元化
+              </h3>
+
+              <p>
+                Excelで管理していた電話履歴とOutlookのメール履歴、
+                さらに社内での対応履歴をまとめ、
+                顧客ごとのやり取りを時系列で確認できるようにしました。
+              </p>
+
+              <div class="before-after">
+
+                <div>
+                  <span>BEFORE</span>
+                  <p>
+                    Excel・Outlook・社内履歴を
+                    それぞれ確認
+                  </p>
+                </div>
+
+                <div class="ba-arrow">
+                  →
+                </div>
+
+                <div>
+                  <span>AFTER</span>
+                  <p>
+                    必要な履歴を
+                    ひとつの画面で確認
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="work-result">
+                <span>RESULT</span>
+                <strong>1回あたり 約30分削減</strong>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Work 02 -->
+          <article class="work-card">
+
+            <div class="work-number">
+              02
+            </div>
+
+            <div class="work-content">
+
+              <div class="work-tags">
+                <span>Excel</span>
+                <span>VBA</span>
+                <span>自動判定</span>
+              </div>
+
+              <h3>
+                IPアドレスの連番判定・<br>
+                グループ化を自動化
+              </h3>
+
+              <p>
+                複数のIPアドレスを確認し、
+                連続しているアドレスを判定してグループ化する作業を自動化。
+                手作業で行っていた判定時間を削減しました。
+              </p>
+
+              <div class="before-after">
+
+                <div>
+                  <span>BEFORE</span>
+                  <p>
+                    IPアドレスを
+                    ひとつずつ確認
+                  </p>
+                </div>
+
+                <div class="ba-arrow">
+                  →
+                </div>
+
+                <div>
+                  <span>AFTER</span>
+                  <p>
+                    連続範囲を
+                    自動判定・グループ化
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="work-result">
+                <span>RESULT</span>
+                <strong>1回あたり 約60分削減</strong>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Work 03 -->
+          <article class="work-card">
+
+            <div class="work-number">
+              03
+            </div>
+
+            <div class="work-content">
+
+              <div class="work-tags">
+                <span>Excel</span>
+                <span>VBA</span>
+                <span>帳票作成</span>
+              </div>
+
+              <h3>
+                毎月の勤怠表作成を<br>
+                ワンクリック化
+              </h3>
+
+              <p>
+                毎月本社へ提出する勤怠表の作成作業を自動化。
+                必要な情報を処理し、
+                ボタンひとつで提出用の勤怠表を作成できるようにしました。
+              </p>
+
+              <div class="before-after">
+
+                <div>
+                  <span>BEFORE</span>
+                  <p>
+                    毎月手作業で
+                    勤怠表を作成
+                  </p>
+                </div>
+
+                <div class="ba-arrow">
+                  →
+                </div>
+
+                <div>
+                  <span>AFTER</span>
+                  <p>
+                    ボタンひとつで
+                    提出用データを作成
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="work-result">
+                <span>RESULT</span>
+                <strong>毎月 約30分削減</strong>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Work 04 -->
+          <article class="work-card">
+
+            <div class="work-number">
+              04
+            </div>
+
+            <div class="work-content">
+
+              <div class="work-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <h3>
+                12ページの業務マニュアルを<br>
+                Webサイト化
+              </h3>
+
+              <p>
+                複数ページに分かれていた業務マニュアルをWeb化。
+                必要な情報へリンクからすぐ移動できるよう、
+                情報の構成から整理しました。
+              </p>
+
+              <div class="before-after">
+
+                <div>
+                  <span>BEFORE</span>
+                  <p>
+                    必要な手順が
+                    どこにあるか探す
+                  </p>
+                </div>
+
+                <div class="ba-arrow">
+                  →
+                </div>
+
+                <div>
+                  <span>AFTER</span>
+                  <p>
+                    リンクから
+                    必要な手順へ移動
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="work-result">
+                <span>RESULT</span>
+                <strong>12ページをWeb上で整理</strong>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="other-works">
+
+          <h3>
+            その他の改善・制作
+          </h3>
+
+          <div class="other-work-grid">
+
+            <div>
+              メールテンプレートの整理・可変値入力
+            </div>
+
+            <div>
+              Teams報告文のテンプレート化
+            </div>
+
+            <div>
+              現地作業メールの自動作成
+            </div>
+
+            <div>
+              GASによるシート自動分割・情報紐付け
+            </div>
+
+            <div>
+              VBSによる月初確認業務の自動化
+            </div>
+
+            <div>
+              VBSによる出退勤処理の自動化
+            </div>
+
+            <div>
+              GAS × GeminiによるSNS文章生成
+              <span class="status">設計中</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <p class="works-note">
+          ※ 実務で使用しているツール・データは機密情報保護のため掲載していません。
+          ポートフォリオ内で掲載する画面は、架空データを用いて再現したデモです。
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Services
+    ========================== -->
+    <section class="section services" id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">SERVICES</p>
+
+          <h2>
+            できること
+          </h2>
+
+          <p class="section-description">
+            「この作業、自動化できる？」という段階からご相談いただけます。
+          </p>
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <span class="service-number">01</span>
+
+            <h3>
+              Excel業務改善
+            </h3>
+
+            <p>
+              集計・転記・帳票作成など、
+              Excelで繰り返している作業を整理して効率化します。
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">02</span>
+
+            <h3>
+              VBA / VBS 自動化
+            </h3>
+
+            <p>
+              Excel内の処理から、
+              ファイル確認・アプリ起動などPC上の定型作業まで自動化します。
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">03</span>
+
+            <h3>
+              GAS / Google Workspace
+            </h3>
+
+            <p>
+              Googleスプレッドシートを中心に、
+              データ整理や繰り返し作業を自動化します。
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">04</span>
+
+            <h3>
+              Web制作
+            </h3>
+
+            <p>
+              HTML・CSS・JavaScriptを使った
+              Webページや業務用ページを制作します。
+            </p>
+
+          </article>
+
+
+          <article class="service-card service-card-wide">
+
+            <span class="service-number">05</span>
+
+            <h3>
+              業務整理・改善提案
+            </h3>
+
+            <p>
+              現在の作業内容を伺い、
+              「ここは自動化できそう」
+              「この手順はまとめられそう」といった改善方法から一緒に考えます。
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Skills
+    ========================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">SKILLS</p>
+
+          <h2>
+            使用技術
+          </h2>
+        </div>
+
+
+        <div class="skill-list">
+
+          <div class="skill">
+            <span>01</span>
+            <strong>Excel</strong>
+          </div>
+
+          <div class="skill">
+            <span>02</span>
+            <strong>VBA</strong>
+          </div>
+
+          <div class="skill">
+            <span>03</span>
+            <strong>VBS</strong>
+          </div>
+
+          <div class="skill">
+            <span>04</span>
+            <strong>GAS</strong>
+          </div>
+
+          <div class="skill">
+            <span>05</span>
+            <strong>HTML</strong>
+          </div>
+
+          <div class="skill">
+            <span>06</span>
+            <strong>CSS</strong>
+          </div>
+
+          <div class="skill">
+            <span>07</span>
+            <strong>JavaScript</strong>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Process
+    ========================== -->
+    <section class="section process">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">PROCESS</p>
+
+          <h2>
+            ご相談から改善まで
+          </h2>
+        </div>
+
+
+        <div class="process-list">
+
+          <div class="process-item">
+            <span>01</span>
+
+            <div>
+              <h3>ヒアリング</h3>
+              <p>
+                現在困っていることや、
+                時間がかかっている作業を伺います。
+              </p>
+            </div>
+          </div>
+
+
+          <div class="process-item">
+            <span>02</span>
+
+            <div>
+              <h3>業務整理</h3>
+              <p>
+                現在の作業手順を整理し、
+                改善できるポイントを探します。
+              </p>
+            </div>
+          </div>
+
+
+          <div class="process-item">
+            <span>03</span>
+
+            <div>
+              <h3>改善方法をご提案</h3>
+              <p>
+                自動化する部分・残す部分を含め、
+                業務に合った方法をご提案します。
+              </p>
+            </div>
+          </div>
+
+
+          <div class="process-item">
+            <span>04</span>
+
+            <div>
+              <h3>制作・実装</h3>
+              <p>
+                VBA・VBS・GAS・Webなど、
+                内容に合わせた方法で制作します。
+              </p>
+            </div>
+          </div>
+
+
+          <div class="process-item">
+            <span>05</span>
+
+            <div>
+              <h3>動作確認・納品</h3>
+              <p>
+                実際の業務で使えることを確認し、
+                必要に応じて使用方法も整理します。
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Profile
+    ========================== -->
+    <section class="section profile">
+      <div class="container">
+
+        <div class="profile-box">
+
+          <div class="profile-heading">
+            <p class="section-label">PROFILE</p>
+
+            <h2>
+              Miku Kobayashi
+            </h2>
+
+            <p class="profile-role">
+              Business Improvement / Automation
+            </p>
+          </div>
+
+          <div class="profile-text">
+
+            <p>
+              日々の「もっとラクにできないかな？」を考えることが好きで、気づけば仕事でもプライベートでも便利な仕組みを作っていることが多いです。
+            </p>
+
+            <p>
+              新しいものを作ったり、試行錯誤しながら形にしていくことが好きです。
+            </p>
+
+            <p>
+                仕事以外では、ダンスをしたり、ネイルを作ったり、好きなものをとことん楽しむタイプです。
+            </p>
+
+            <p>
+                「エンジニアに相談する」と身構えず、ちょっと詳しい人に聞いてみるくらいの感覚で気軽にご相談ください。
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+
+            <div class="contact-box">
+
+            <div class="contact-heading">
+                <p class="section-label">CONTACT</p>
+
+                <h2>
+                「この作業って、<br>
+                自動化できる？」
+                </h2>
+
+                <p>
+                そんな段階からでも大丈夫です。<br>
+                現在の作業内容を整理しながら、
+                改善できる方法を一緒に考えます。
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+                <label for="name">
+                    お名前
+                    <span class="required">必須</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="山田 太郎"
+                    autocomplete="name"
+                    required
+                >
+                </div>
+
+                <div class="form-group">
+                <label for="email">
+                    メールアドレス
+                    <span class="required">必須</span>
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required
+                >
+                </div>
+
+                <div class="form-group">
+                <label for="category">
+                    ご相談内容
+                    <span class="required">必須</span>
+                </label>
+
+                <select
+                    id="category"
+                    name="category"
+                    required
+                >
+                    <option value="" selected disabled>
+                    選択してください
+                    </option>
+
+                    <option value="Excel業務改善">
+                    Excel業務改善
+                    </option>
+
+                    <option value="VBA / VBS 自動化">
+                    VBA / VBS 自動化
+                    </option>
+
+                    <option value="GAS / Google Workspace">
+                    GAS / Google Workspace
+                    </option>
+
+                    <option value="Web制作">
+                    Web制作
+                    </option>
+
+                    <option value="業務整理・改善相談">
+                    業務整理・改善相談
+                    </option>
+
+                    <option value="その他">
+                    その他
+                    </option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="message">
+                    現在困っていること
+                    <span class="required">必須</span>
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    placeholder="例：毎月複数のExcelファイルを手作業で集計しています。自動化できるか相談したいです。"
+                    required
+                ></textarea>
+
+                <p class="form-help">
+                    まだ具体的に決まっていなくても大丈夫です。
+                </p>
+                </div>
+
+                <button
+                type="submit"
+                class="form-submit"
+                id="submitButton"
+                >
+                <span id="submitButtonText">
+                    相談内容を送信
+                </span>
+
+                <span aria-hidden="true">
+                    →
+                </span>
+                </button>
+
+                <p
+                class="form-message"
+                id="formMessage"
+                aria-live="polite"
+                ></p>
+
+            </form>
+
+            </div>
+
+        </div>
+        </section>
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <p class="footer-logo">
+        Miku Kobayashi
+      </p>
+
+      <p class="copyright">
+        © 2026 Miku Kobayashi
+      </p>
+
     </div>
   </footer>
+
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
